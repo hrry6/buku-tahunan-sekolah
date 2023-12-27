@@ -11,5 +11,5 @@ class Jurusan extends Model
     protected $table = "jurusan";
     protected $primaryKey = "id_jurusan";
     protected $fillable = ["id_sekolah", "jurusan"];
-    protected $timestamps = false;
+    public $timestamps = false;
 }

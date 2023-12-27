@@ -11,5 +11,5 @@ class Circle extends Model
     protected $table = "circle";
     protected $primaryKey = "id_circle";
     protected $fillable = ["id_sekolah", "id_kelas", "foto_circle", "urutan"];
-    protected $timestamps = false;
+    public $timestamps = false;
 }

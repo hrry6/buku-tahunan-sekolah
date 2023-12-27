@@ -11,5 +11,5 @@ class EkstraKurikuler extends Model
     protected $table = "ekstra_kurikuler";
     protected $primaryKey = "id_ekskul";
     protected $fillable = ["id_sekolah", "foto_ekskul", "nama_ekskul"];
-    protected $timestamps = false; 
+    public $timestamps = false; 
 }

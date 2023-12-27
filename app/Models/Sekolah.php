@@ -11,5 +11,5 @@ class Sekolah extends Model
     protected $table = "sekolah";
     protected $primaryKey = "id_sekolah";
     protected $fillable = ["nama_sekolah", "tahun_angkatan", "logo_sekolah", "foto_sekolah","visi", "misi", "mars"];
-    protected $timestamps = false;
+    public $timestamps = false;
 }

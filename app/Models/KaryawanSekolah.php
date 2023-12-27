@@ -11,5 +11,5 @@ class KaryawanSekolah extends Model
     protected $table = "karyawan_sekolah";
     protected $primaryKey = "id_karyawan";
     protected $fillable = ["id_sekolah", "nama_karyawan", "status", "quotes", "media_sosial", "foto_karyawan"];
-    protected $timestamps = false;
+    public $timestamps = false;
 }

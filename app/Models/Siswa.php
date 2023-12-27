@@ -11,5 +11,5 @@ class Siswa extends Model
     protected $table = "siswa";
     protected $primaryKey = "id_siswa";
     protected $fillable = ["id_sekolah", "id_circle", "nama_siswa", "quotes", "media_sosial", "foto_siswa"];
-    protected $timestamps = false;
+    public $timestamps = false;
 }

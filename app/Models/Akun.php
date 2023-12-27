@@ -17,5 +17,5 @@ class Akun extends Authenticatable
     protected $casts = [
         'password' => 'hashed'
     ];
-    protected $timestamps = false;
+    public $timestamps = false;
 }

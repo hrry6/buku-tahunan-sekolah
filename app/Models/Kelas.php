@@ -11,5 +11,5 @@ class Kelas extends Model
     protected $table = "kelas";
     protected $primaryKey = "id_kelas";
     protected $fillable = ["id_sekolah", "id_jurusan", "id_wali_kelas", "nama_kelas", "foto_kelas"];
-    protected $timestamps = false;
+    public $timestamps = false;
 }

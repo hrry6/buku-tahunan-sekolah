@@ -11,5 +11,5 @@ class Gallery extends Model
     protected $table = "gallery";
     protected $primaryKey = "id_gallery";
     protected $fillable = ["id_kelas", "foto_gallery"];
-    protected $timestamps = false;
+    public $timestamps = false;
 }

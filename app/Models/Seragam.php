@@ -11,5 +11,5 @@ class Seragam extends Model
     protected $table = "seragam";
     protected $primaryKey = "id_seragam";
     protected $fillable = ["id_sekolah", "seragam", "foto_seragam"];
-    protected $timestamps = false;
+    public $timestamps = false;
 }

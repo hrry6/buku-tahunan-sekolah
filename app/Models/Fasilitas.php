@@ -11,5 +11,5 @@ class Fasilitas extends Model
     protected $table = "fasilitas";
     protected $primaryKey = "id_fasilitas";
     protected $fillable = ["id_sekolah", "fasilitas", "foto_fasilitas"];
-    protected $timestamps = false;
+    public $timestamps = false;
 }

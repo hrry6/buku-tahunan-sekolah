@@ -15,7 +15,7 @@ return new class extends Migration
             $table->integer('id_akun', true);
             $table->integer('id_sekolah')->nullable(true);
             $table->string('username', 60);
-            $table->string('password', 11);
+            $table->text('password');
             $table->enum('role', ['super_admin', 'admin_sekolah'])->default('admin_sekolah');
 
             //Foreign Key

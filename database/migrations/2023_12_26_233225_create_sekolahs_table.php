@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('tahun_angkatan');
             $table->text('logo_sekolah');
             $table->text('foto_sekolah');
-            $table->string('visi', 60);
+            $table->string('visi', 200);
             $table->text('misi');
             $table->text('mars');
         });
