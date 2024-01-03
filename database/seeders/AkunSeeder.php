@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Akun;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class AkunSeeder extends Seeder
 {
@@ -16,7 +17,7 @@ class AkunSeeder extends Seeder
         Akun::create([
             'id_sekolah' => null,
             'username' => 'super-admin',
-            'password' => '123',
+            'password' => Hash::make('123'),
             'role' => 'super_admin' 
         ]);
 
@@ -24,7 +25,7 @@ class AkunSeeder extends Seeder
             Akun::create([
                 'id_sekolah' => $i,
                 'username' => 'sekolah'.$i,
-                'password' => '123',
+                'password' => Hash::make('123'),
                 'role' => 'admin_sekolah' 
             ]);
         }
