@@ -21,6 +21,9 @@ class Role
         if($user && $user->role == $allowedRole)
         {
             return $next($request);
+        }if($user && $user->role == "super_admin" && $allowedRole != "super_admin")
+        {
+            return redirect()->route('super_admin');
         }else
         {
             return abort(403);

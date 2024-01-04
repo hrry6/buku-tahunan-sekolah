@@ -3,7 +3,7 @@ import { Link, Head } from '@inertiajs/react';
 export default function Main() {
     return (
         <>
-            <Head title="Main" />
+            <Head title="Buku Tahunan Sekolah" />
             <p>Ini Main Page</p>
             <Link
                 href={route('login')}

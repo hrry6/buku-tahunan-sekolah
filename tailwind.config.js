@@ -18,5 +18,17 @@ export default {
         },
     },
 
-    plugins: [forms],
+    plugins: [
+        require('@tailwindcss/forms')({
+          strategy: 'class', // Pilih strategy class untuk mengaktifkan plugin utility class
+        }),
+        function ({ addUtilities }) {
+          const newUtilities = {
+            '.box-shadow-custom': {
+              boxShadow: '0px 20px 40px 0px rgba(0, 0, 0, 0.40)',
+            },
+          };
+          addUtilities(newUtilities, ['responsive', 'hover']);
+        },
+      ],
 };
