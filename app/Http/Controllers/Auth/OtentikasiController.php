@@ -55,6 +55,9 @@ class OtentikasiController extends Controller
             if (isset($redirectMap[$user->role])) {
                 return redirect($redirectMap[$user->role]);
             }
+        }else
+        {
+            return redirect('/login');
         }
     }
 
