@@ -23,7 +23,7 @@ export default function Login() {
         <>
             <Head title="Login" />
             <section className='bg-white min-h-screen flex justify-center items-center selection:bg-white selection:text-black'>
-                <div className='flex w-[65%] max-w-[832px] min-w-[275px] h-[472px] max-h-[472px] rounded-tl-[50px] rounded-bl-[10px] rounded-br-[50px] overflow-hidden box-shadow-custom'>
+                <div className='flex w-[65%] max-w-[832px] min-w-[275px] h-[472px] max-h-[472px] rounded-tl-[50px] rounded-bl-[10px] rounded-br-[50px] overflow-hidden shadow-custom'>
                     <div className='w-1/2 min-[850px]:block hidden'>
                         <img src="/img/LoginImage.png" className='mt-[75px] mb-[45px] w-full h-[353px]' alt="" />
                     </div>
