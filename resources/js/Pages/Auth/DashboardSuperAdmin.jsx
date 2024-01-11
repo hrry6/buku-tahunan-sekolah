@@ -76,10 +76,10 @@ const DashboardSuperAdmin = () => {
           <main className='bg-white w-full'>
             <div className="flex justify-between items-center">
               <h2 className='text-[24px] font-bold text-[#363949]'>Dashboard</h2>
-              <Link className='bg-[#FF7784] flex justify-center items-center gap-[18px] rounded-[10px] text-[#F6F6F9] px-[18px] py-[7px]'>
+              <Link className='bg-[#FF7784] flex justify-center items-center gap-[18px] rounded-[10px] text-[#F6F6F9] px-[18px] py-[7px] mb-15'>
                 <i class="fa-solid fa-right-from-bracket text-[19px]"></i>
                 <p className='text-[15px] font-medium'>Logout</p>
-                </Link>
+              </Link>
             </div>
           </main>
         </div>
