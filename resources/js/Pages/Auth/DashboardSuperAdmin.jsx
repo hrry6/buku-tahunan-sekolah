@@ -2,8 +2,9 @@ import React from 'react'
 import { Head, Link } from '@inertiajs/react'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import AdminLink from '@/Components/AdminLink'
+import CountBox from '@/Components/CountBox'
 
-const DashboardSuperAdmin = () => {
+const DashboardSuperAdmin = ({jumlahSekolah, jumlahEkstraKurikuler, jumlahSeragam, jumlahFasilitas, jumlahKaryawanSekolah, jumlahJurusan, jumlahKelas, jumlahCircle, jumlahSiswa, jumlahGallery, jumlahKomentar}) => {
   return (
     <div className='bg-[#F6F6F9]'>
         <Head title='Dashboard Super Admin' />
@@ -73,14 +74,80 @@ const DashboardSuperAdmin = () => {
             </div>
           </aside>
 
-          <main className='bg-white w-full'>
-            <div className="flex justify-between items-center">
+          <main className='w-full'>
+            <div className="flex justify-between items-center mb-[15px]">
               <h2 className='text-[24px] font-bold text-[#363949]'>Dashboard</h2>
               <Link className='bg-[#FF7784] flex justify-center items-center gap-[18px] rounded-[10px] text-[#F6F6F9] px-[18px] py-[7px] mb-15'>
-                <i class="fa-solid fa-right-from-bracket text-[19px]"></i>
+                <i className="fa-solid fa-right-from-bracket text-[19px]"></i>
                 <p className='text-[15px] font-medium'>Logout</p>
               </Link>
             </div>
+            {/* Isi */}
+            <div>
+              <div className="flex flex-row items-center gap-5">
+                <button className='bg-white py-[9px] pr-[9px] pl-[19px] w-[290px] shadow-button flex justify-between items-center rounded-full'>
+                  <h3 className='font-semibold text-[18px] text-[#363949]'>Pilih Sekolah</h3>
+                  <div className='w-[33px] h-[33px] flex justify-center items-center bg-[#7380EC] rounded-full'>
+                    <i className="fa-solid fa-angle-down text-white text-[28px]"></i>
+                  </div>
+                </button>
+                <h3 className='font-semibold text-[18px] text-[#363949]'>Total Sekolah : {jumlahSekolah}</h3>
+              </div>
+
+              <div className="mt-[21px] grid grid-cols-4 gap-y-[21px] justify-end">
+                <CountBox
+                  icon={"fa-solid fa-school"}
+                  judul={"Ekstra Kurikuler"}
+                  jumlah={jumlahEkstraKurikuler}
+                />
+                <CountBox
+                  icon={"fa-solid fa-school"}
+                  judul={"Seragam"}
+                  jumlah={jumlahSeragam}
+                />
+                <CountBox
+                  icon={"fa-solid fa-school"}
+                  judul={"Fasilitas"}
+                  jumlah={jumlahFasilitas}
+                />
+                <CountBox
+                  icon={"fa-solid fa-school"}
+                  judul={"Karyawan Sekolah"}
+                  jumlah={jumlahKaryawanSekolah}
+                />
+                <CountBox
+                  icon={"fa-solid fa-school"}
+                  judul={"Jurusan"}
+                  jumlah={jumlahJurusan}
+                />
+                <CountBox
+                  icon={"fa-solid fa-school"}
+                  judul={"Kelas"}
+                  jumlah={jumlahKelas}
+                />
+                <CountBox
+                  icon={"fa-solid fa-school"}
+                  judul={"Circle"}
+                  jumlah={jumlahCircle}
+                />
+                <CountBox
+                  icon={"fa-solid fa-school"}
+                  judul={"Siswa"}
+                  jumlah={jumlahSiswa}
+                />
+                <CountBox
+                  icon={"fa-solid fa-school"}
+                  judul={"Gallery"}
+                  jumlah={jumlahGallery}
+                />
+                <CountBox
+                  icon={"fa-solid fa-school"}
+                  judul={"Komentar"}
+                  jumlah={jumlahKomentar}
+                />
+              </div>
+            </div>
+            {/* End Isi */}
           </main>
         </div>
     </div>

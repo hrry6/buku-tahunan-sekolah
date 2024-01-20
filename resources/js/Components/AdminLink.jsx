@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from '@inertiajs/react'
+import '@fortawesome/fontawesome-free/css/all.min.css'
+
 
 const AdminLink = ({url = '', active = false, icon, label}) => {
   return (
